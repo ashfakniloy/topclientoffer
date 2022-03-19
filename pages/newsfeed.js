@@ -27,7 +27,7 @@ function NewsFeedPage() {
           {offerList.map((offer) => (
             <div
               key={offer.id}
-              className="flex flex-col items-start gap-4  w-[320px] lg:w-[547px] cursor-pointer"
+              className="flex flex-col items-start gap-4  w-full lg:w-[547px] cursor-pointer"
             >
               <Image
                 src={offer.img}
