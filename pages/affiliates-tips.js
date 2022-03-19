@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header2 from "../components/header2";
 import Layout from "../components/Layout";
 
 const affiliateList = [
@@ -25,7 +24,7 @@ const affiliateList = [
   },
 ];
 
-function newsfeed() {
+function AffiliatesTipsPage() {
   return (
     <Layout>
       <div className="text-white">
@@ -52,4 +51,4 @@ function newsfeed() {
   );
 }
 
-export default newsfeed;
+export default AffiliatesTipsPage;

@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import { useRouter } from "next/router";
-import Header2 from "./header2";
+import Header2 from "./Header2";
 
 function Layout({ children }) {
   const { pathname } = useRouter();

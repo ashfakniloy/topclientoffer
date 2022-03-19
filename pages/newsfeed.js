@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Header2 from "../components/header2";
 import Layout from "../components/Layout";
 
 const offerList = [
@@ -20,7 +19,7 @@ const offerList = [
   },
 ];
 
-function newsfeed() {
+function NewsFeedPage() {
   return (
     <Layout>
       <div className="text-white">
@@ -47,4 +46,4 @@ function newsfeed() {
   );
 }
 
-export default newsfeed;
+export default NewsFeedPage;
