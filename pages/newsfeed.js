@@ -21,7 +21,7 @@ const offerList = [
 
 function NewsFeedPage() {
   return (
-    <Layout>
+    <Layout title="News feed">
       <div className="text-white">
         <div className="container mt-8 mb-14 px-4 grid grid-cols-1 lg:grid-cols-2 gap-7 ">
           {offerList.map((offer) => (

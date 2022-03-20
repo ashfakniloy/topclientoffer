@@ -1,78 +1,32 @@
-import { useState } from "react";
-import {
-  FaMoneyCheckAlt,
-  FaGlobeAmericas,
-  FaHome,
-  FaHeadset,
-  FaChartBar,
-  FaDollarSign,
-} from "react-icons/fa";
+import { highlightList } from "../data/hightlist";
 
 function Highlights() {
-  const [showCard, setShowCard] = useState(false);
-
   return (
     <div className="px-2 py-8 lg:py-24 ">
       <h1 className="text-custom-red text-center text-[53px] lg:text-[61px] font-bold uppercase">
         Highlights
       </h1>
 
-      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5 place-items-center ">
-        <div className="flex flex-col gap-6 py-16 items-center">
-          <div className="text-5xl">
-            <FaMoneyCheckAlt />
+      <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-5 place-items-center">
+        {highlightList.map((highlight) => (
+          <div
+            key={highlight.id}
+            className="relative flex flex-col justify-center items-center w-full h-[265px] md:w-[450px]"
+          >
+            <div className="flex flex-col justify-center items-center">
+              <div className="text-5xl">{highlight.icon}</div>
+              <p className="mt-6 text-[24px] lg:text-[35px] font-semibold">
+                {highlight.name}
+              </p>
+            </div>
+
+            <div className="absolute transition-all duration-700 opacity-0 hover:opacity-100 p-14 bg-gradient-to-tr from-black via-custom-red  to-black">
+              <p className="flex flex-col justify-center items-center h-[180px] text-[13px] text-center font-medium">
+                {highlight.desc}
+              </p>
+            </div>
           </div>
-
-          <p className="text-[24px] lg:text-[35px] font-semibold">
-            1000+ offers
-          </p>
-        </div>
-
-        <div className="flex flex-col gap-6 py-16 items-center ">
-          <div className="text-5xl">
-            <FaGlobeAmericas />
-          </div>
-
-          <p className="text-[24px] lg:text-[35px] font-semibold">
-            Global coverage
-          </p>
-        </div>
-        <div className="flex flex-col gap-6 py-16 items-center ">
-          <div className="text-5xl">
-            <FaHome />
-          </div>
-
-          <p className="text-[24px] lg:text-[35px] font-semibold">
-            In-house technologies
-          </p>
-        </div>
-        <div className="flex flex-col gap-6 py-16 items-center ">
-          <div className="text-5xl">
-            <FaHeadset />
-          </div>
-
-          <p className="text-[24px] lg:text-[35px] font-semibold">
-            24/7 support
-          </p>
-        </div>
-        <div className="flex flex-col gap-6 py-16 items-center ">
-          <div className="text-5xl">
-            <FaChartBar />
-          </div>
-
-          <p className="text-[24px] lg:text-[35px] font-semibold">
-            Real-time stats
-          </p>
-        </div>
-        <div className="flex flex-col gap-6 py-16 items-center ">
-          <div className="text-5xl">
-            <FaDollarSign />
-          </div>
-
-          <p className="text-[24px] lg:text-[35px] font-semibold">
-            Fast payment
-          </p>
-        </div>
+        ))}
       </div>
     </div>
   );

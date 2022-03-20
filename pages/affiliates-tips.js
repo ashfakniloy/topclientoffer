@@ -26,9 +26,9 @@ const affiliateList = [
 
 function AffiliatesTipsPage() {
   return (
-    <Layout>
+    <Layout title="Affiliate tips">
       <div className="text-white">
-        <div className="container mt-8 mb-14 px-4 grid grid-cols-1 lg:grid-cols-2 gap-7 ">
+        <div className="container mt-8 mb-14 px-4 grid grid-cols-1 lg:grid-cols-2 gap-7">
           {affiliateList.map((affiliate) => (
             <div
               key={affiliate.id}
