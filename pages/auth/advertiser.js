@@ -89,7 +89,7 @@ function AdvertiserPage() {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                 />
-                <div className="absolute top-3 right-[10px] text-slate-600 pl-3 text-sm bg-white">
+                <div className="absolute top-3 right-[10px] text-slate-600 pl-1 lg:text-sm bg-white">
                   -topClientOffer
                 </div>
               </div>
@@ -162,7 +162,6 @@ function AdvertiserPage() {
                   <option
                     value=""
                     className="text-slate-400"
-                    disabled
                     defaultValue={true}
                     hidden
                   >
@@ -186,7 +185,6 @@ function AdvertiserPage() {
               <label htmlFor="password">Password *</label>
               <div className="relative">
                 <input
-                  // type="password"
                   type={showPassword ? "text" : "password"}
                   id="password"
                   name="password"
@@ -217,7 +215,6 @@ function AdvertiserPage() {
               <label htmlFor="confirmPassword">Confirm Password *</label>
               <div className="relative">
                 <input
-                  // type="password"
                   type={confirmShowPassword ? "text" : "password"}
                   id="confirmPassword"
                   name="confirmPassword"
@@ -348,7 +345,6 @@ function AdvertiserPage() {
                   <option
                     value=""
                     className="text-slate-400"
-                    disabled
                     defaultValue={true}
                     hidden
                   >

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 function Banner() {
   return (
@@ -8,7 +9,22 @@ function Banner() {
           <h1 className="text-[42px] lg:text-[87px] font-bold">
             TopClientOffer
           </h1>
-          <p className="lg:text-[43px]">Best CPA network in the market</p>
+          <div className="lg:text-[43px]">
+            <Typewriter
+              options={{
+                strings: [
+                  "High Traffic Monetization CPA network",
+                  "Daily Payment on exclusive offers",
+                  "Best CPA network in the market",
+                ],
+                delay: 12.5,
+                deleteSpeed: 12.5,
+                autoStart: true,
+                loop: true,
+                cursor: "",
+              }}
+            />
+          </div>
           <div className="mt-4 flex gap-5 items-center">
             <Link href="/auth/affiliate" passHref>
               <button className="btn bg-custom-red border-custom-red rounded">

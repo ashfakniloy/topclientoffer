@@ -1,6 +1,5 @@
 import { FaEnvelope, FaRegSun } from "react-icons/fa";
 import { useFormik } from "formik";
-import { motion } from "framer-motion";
 
 function Contact() {
   const formik = useFormik({

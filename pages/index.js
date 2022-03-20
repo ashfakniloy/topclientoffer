@@ -11,9 +11,9 @@ import Layout from "../components/Layout";
 function index() {
   return (
     <Layout>
-      <div className="bg-black font-Roboto text-white">
+      <div className="bg-black font-Roboto text-white overflow-hidden">
         <Banner />
-        <div className="container">
+        <div className="container ">
           <About />
           <Highlights />
           <Join />

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { FaBars, FaTimes } from "react-icons/fa";
 import Dropdown from "./Dropdown";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Header() {
   const [toggle, setToggle] = useState(false);
@@ -24,8 +24,23 @@ function Header() {
     };
   }, []);
 
+  const variants = {
+    hidden: {
+      y: -400,
+      transition: {
+        duration: 0.5,
+      },
+    },
+    visible: {
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
+  };
+
   return (
-    <div className="fixed z-10 w-full">
+    <div className="fixed z-30 w-full">
       <div className={scroll ? "bg-black duration-300" : "duration-300"}>
         <div className="container flex justify-between items-center px-2 text-slate-100">
           <div className="pt-2 w-[66px] lg:w-[132px]">
@@ -91,7 +106,9 @@ function Header() {
           </div>
         </div>
       </div>
-      {toggle ? <Dropdown toggle={toggle} setToggle={setToggle} /> : null}
+      {/* {toggle ? <Dropdown toggle={toggle} setToggle={setToggle} /> : null} */}
+
+      <Dropdown toggle={toggle} setToggle={setToggle} />
     </div>
   );
 }

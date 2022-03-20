@@ -7,7 +7,7 @@ function Layout({ title, description, keywords, children }) {
   const { pathname } = useRouter();
 
   return (
-    <div>
+    <div className="">
       <Head>
         <title>{title}</title>
         <meta name="keywords" content={keywords} />

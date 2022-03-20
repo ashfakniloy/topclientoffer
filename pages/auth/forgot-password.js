@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import Layout2 from "../../components/Layout2";

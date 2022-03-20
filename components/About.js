@@ -1,26 +1,26 @@
-import React from "react";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 function About() {
+  const variants = {
+    hidden: {
+      x: -800,
+    },
+    visible: {
+      x: "0px",
+      transition: {
+        duration: 1,
+      },
+    },
+  };
+
   return (
     <div id="about" className="">
-      <div className="px-2 pt-[260px] pb-4 overflow-hidden ">
+      <div className="px-2 pt-[260px] pb-4 ">
         <motion.h1
-          className="text-custom-red text-center text-[43px] lg:text-[80px] font-bold"
-          // initial="hidden"
-          // animate="visible"
-          // variants={{
-          //   hidden: {
-          //     x: 0,
-          //   },
-          //   visible: {
-          //     x: 200,
-          //     transition: {
-          //       duration: 1,
-          //     },
-          //   },
-          // }}
+          className="w-full text-custom-red text-center  text-[43px] lg:text-[80px] font-bold"
+          initial="hidden"
+          animate="visible"
+          variants={variants}
         >
           About us
         </motion.h1>
