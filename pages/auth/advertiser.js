@@ -89,7 +89,7 @@ function AdvertiserPage() {
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
                 />
-                <div className="absolute top-3 right-[10px] text-slate-600 pl-1 lg:text-sm bg-white">
+                <div className="absolute top-3 right-[10px] text-slate-600 pl-1 text-sm bg-white">
                   -topClientOffer
                 </div>
               </div>

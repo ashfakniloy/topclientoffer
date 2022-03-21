@@ -21,7 +21,7 @@ function Highlights() {
             </div>
 
             <div className="absolute transition-all duration-700 opacity-0 hover:opacity-100 p-14 bg-gradient-to-tr from-black via-custom-red  to-black">
-              <p className="flex flex-col justify-center items-center h-[180px] text-[13px] text-center font-medium">
+              <p className="flex flex-col justify-center items-center h-[150px] text-[13px] text-center font-medium">
                 {highlight.desc}
               </p>
             </div>
