@@ -42,7 +42,7 @@ function Dropdown({ toggle, setToggle }) {
       </div>
 
       <div
-        className={`translate-y-[220px] bg-custom-red text-white text-sm font-semibold origin-top transition-all duration-300 ${
+        className={`translate-y-[220px] bg-custom-red text-white text-sm font-semibold origin-top transition-all duration-300 cursor-pointer ${
           showMenu ? "scale-y-100" : "scale-y-0"
         }`}
       >
