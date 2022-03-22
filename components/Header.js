@@ -24,28 +24,20 @@ function Header() {
     };
   }, []);
 
-  const variants = {
-    hidden: {
-      y: -400,
-      transition: {
-        duration: 0.5,
-      },
-    },
-    visible: {
-      y: 0,
-      transition: {
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
     <div className="fixed z-30 w-full">
       <div className={scroll ? "bg-black duration-300" : "duration-300"}>
         <div className="container flex justify-between items-center px-2 text-slate-100">
-          <div className="pt-2 w-[66px] lg:w-[132px]">
-            <Image src="/images/logo.png" alt="logo" width={132} height={123} />
-          </div>
+          <Link href="/" passHref>
+            <div className="pt-2 w-[66px] lg:w-[132px]">
+              <Image
+                src="/images/logo.png"
+                alt="logo"
+                width={132}
+                height={123}
+              />
+            </div>
+          </Link>
 
           <button
             className="lg:hidden text-xl pr-2"
