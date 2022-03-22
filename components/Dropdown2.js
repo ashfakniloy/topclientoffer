@@ -16,7 +16,7 @@ function Dropdown2({ toggle, setToggle }) {
           <p>Offers of the week</p>
         </Link>
         <Link passHref href="/affiliates-tips">
-          <p>Affiliate tips</p>
+          <p>Affiliates tips</p>
         </Link>
         <Link passHref href="#">
           <p>Topclientoffer news</p>

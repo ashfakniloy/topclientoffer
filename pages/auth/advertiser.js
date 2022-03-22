@@ -76,7 +76,7 @@ function AdvertiserPage() {
             className="grid grid-cols-2 gap-2 text-[12px]"
             onSubmit={formik.handleSubmit}
           >
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="name">Username *</label>
               <div className="relative">
                 <input
@@ -102,7 +102,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="companyName">Company Name *</label>
               <div className="relative">
                 <input
@@ -125,7 +125,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="email">Contact Email *</label>
               <div className="relative">
                 <input
@@ -148,7 +148,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="IMtype">IM Type *</label>
               <div className="relative">
                 <select
@@ -181,7 +181,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="password">Password *</label>
               <div className="relative">
                 <input
@@ -211,7 +211,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="confirmPassword">Confirm Password *</label>
               <div className="relative">
                 <input
@@ -246,7 +246,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="IMcontact">IM Contact *</label>
               <div className="relative">
                 <input
@@ -269,7 +269,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="linkCRM">Link to the CRM</label>
               <div className="relative">
                 <input
@@ -285,7 +285,7 @@ function AdvertiserPage() {
               </div>
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="firstName">First Name *</label>
               <div className="relative">
                 <input
@@ -308,7 +308,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="lastName">Last Name *</label>
               <div className="relative">
                 <input
@@ -331,7 +331,7 @@ function AdvertiserPage() {
               )}
             </div>
 
-            <div className="relative py-3">
+            <div className="relative col-span-2 md:col-span-1 py-3">
               <label htmlFor="verticles">Verticles *</label>
               <div className="relative">
                 <select

@@ -38,7 +38,7 @@ function Header2() {
 
           <div className="hidden lg:flex justify-between items-center gap-8 font-semibold uppercase cursor-pointer">
             <Link href="/newsfeed">Offer of the week</Link>
-            <Link href="/affiliates-tips">Affiliate tips</Link>
+            <Link href="/affiliates-tips">Affiliates tips</Link>
             <Link href="">Topclientoffer news</Link>
           </div>
         </div>
