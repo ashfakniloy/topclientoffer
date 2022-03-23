@@ -3,12 +3,13 @@ import { motion } from "framer-motion";
 function About() {
   const variants = {
     hidden: {
-      x: -800,
+      x: "-110vw",
     },
     visible: {
       x: "0px",
       transition: {
-        duration: 1,
+        duration: 1.5,
+        ease: "easeOut",
       },
     },
   };

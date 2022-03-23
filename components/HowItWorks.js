@@ -12,28 +12,30 @@ function HowItWorks() {
 
   const variantsLeft = {
     hidden: {
-      x: -800,
-      opacity: 0.1,
+      x: "-40vw",
+      opacity: 0,
     },
     visible: {
       x: "0px",
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 1.2,
+        ease: "easeOut",
       },
     },
   };
 
   const variantsRight = {
     hidden: {
-      x: 800,
-      opacity: 0.1,
+      x: "40vw",
+      opacity: 0,
     },
     visible: {
       x: "0px",
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 1.2,
+        ease: "easeOut",
       },
     },
   };
