@@ -1,27 +1,18 @@
 import { motion } from "framer-motion";
+import { aboutAnimation } from "../styles/Animate";
+import { useScroll } from "./useScroll";
 
 function About() {
-  const variants = {
-    hidden: {
-      x: "-110vw",
-    },
-    visible: {
-      x: "0px",
-      transition: {
-        duration: 1.5,
-        ease: "easeOut",
-      },
-    },
-  };
+  const [element, controls] = useScroll();
 
   return (
-    <div id="about" className="">
+    <div id="about" className="" ref={element}>
       <div className="px-2 pt-[260px] pb-4 ">
         <motion.h1
           className="w-full text-custom-red text-center  text-[43px] lg:text-[80px] font-bold"
-          initial="hidden"
-          animate="visible"
-          variants={variants}
+          initial="initial"
+          animate={controls}
+          variants={aboutAnimation}
         >
           About us
         </motion.h1>

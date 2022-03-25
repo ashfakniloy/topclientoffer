@@ -15,7 +15,7 @@ function Dropdown({ toggle, setToggle }) {
         toggle ? "scale-y-100" : "scale-y-0"
       }`}
     >
-      <div className=" bg-custom-red text-white font-Roboto font-[13px] font-medium absolute w-full text-sm uppercase transition-all duration-300 cursor-pointer">
+      <div className="bg-custom-red text-white font-Roboto font-[13px] font-medium absolute w-full text-sm uppercase transition-all duration-300 cursor-pointer">
         <div onClick={handleClose}>
           <Link passHref href="#about">
             <p className="dropdown_link">About us</p>
