@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import Dropdown from "./Dropdown";
@@ -9,7 +8,6 @@ function Header() {
   const [toggle, setToggle] = useState(false);
   const [scroll, setScroll] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
-  const router = useRouter();
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
@@ -56,29 +54,13 @@ function Header() {
 
           <div className="hidden lg:flex items-center text-[15px] font-semibold gap-4 uppercase">
             <Link passHref href="#about">
-              <p
-                className={`px-4 py-2 border-b-[3px] hover:border-custom-red transition duration-300 cursor-pointer ${
-                  router.asPath === "/#about"
-                    ? "border-custom-red"
-                    : "border-transparent"
-                }`}
-              >
-                About us
-              </p>
+              <p className="header-link">About us</p>
             </Link>
             <Link passHref href="/newsfeed">
               <p className="header-link">News feed</p>
             </Link>
             <Link passHref href="/#how-it-works">
-              <p
-                className={`px-4 py-2 border-b-[3px] hover:border-custom-red transition duration-300 cursor-pointer ${
-                  router.asPath === "/#how-it-works"
-                    ? "border-custom-red"
-                    : "border-transparent"
-                }`}
-              >
-                How it works
-              </p>
+              <p className="header-link">How it works</p>
             </Link>
             <Link passHref href="/auth">
               <p className="header-link">Sign in</p>
