@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { aboutAnimation } from "../styles/Animate";
+import { aboutAnimation } from "../styles/Animation";
 import { useScroll } from "./useScroll";
 
 function About() {

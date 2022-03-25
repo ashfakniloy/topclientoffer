@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useScroll } from "./useScroll";
-import { leftSection, rightSection } from "../styles/Animate";
+import { leftSection, rightSection } from "../styles/Animation";
 
 function HowItWorks() {
   const [element, controls] = useScroll();
@@ -39,9 +39,9 @@ function HowItWorks() {
           variants={rightSection}
           initial="initial"
           animate={controls}
-          className="mt-6 flex w-full h-[120px] lg:w-[510px] lg:h-[254px]"
+          className="mt-10 mx-5"
         >
-          <Image src="/images/stats.png" alt="stats" width={510} height={254} />
+          <Image src="/images/stats.png" alt="stats" width={512} height={227} />
         </motion.div>
       </div>
     </div>
