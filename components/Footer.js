@@ -13,7 +13,7 @@ function Footer() {
             width={170}
             height={114}
           />
-          <p className="mt-3 text-sm">4137 forley st elhmust 11373 new York</p>
+          <p className="mt-3 text-sm">4137 Forley st elhmust 11373 New York</p>
         </div>
 
         <div className="mt-5">
@@ -39,9 +39,19 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mt-8 border-t border-custom-red mx-4">
-        <p className="pt-8 pb-4 text-xs lg:text-[15px] text-center">
-          Copyright ©2021 TopClientOffer | All Rights Reserved.
+      <div className="mt-8 border-t pt-8 pb-4 text-xs lg:text-[15px] border-custom-red mx-4 flex flex-col lg:flex-row gap-2 lg:gap-0 justify-between items-center">
+        <p>Copyright ©2022 TopClientOffer | All Rights Reserved.</p>
+
+        <p>
+          <span className="font-semibold mr-2">Developed by:</span>
+          <a
+            href="https://niloy.vercel.app"
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-300 hover:text-blue-500 underline transition-colors duration-200"
+          >
+            Ashfak Ahmed Niloy
+          </a>
         </p>
       </div>
     </div>
