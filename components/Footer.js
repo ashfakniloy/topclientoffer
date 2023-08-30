@@ -6,7 +6,7 @@ function Footer() {
   return (
     <div className="mt-5 text-center">
       <div className=" grid grid-cols-1 lg:grid-cols-3 place-items-center">
-        <div className="">
+        <div>
           <Image
             src="/images/logoFooter.png"
             alt="logo"
@@ -27,7 +27,7 @@ function Footer() {
 
         <div className="mt-7 flex flex-col">
           <div className="text-[13px] lg:text-[15px] uppercase">
-            <p className="">Privacy policy</p>
+            <p>Privacy policy</p>
             <p className="mt-5">Terms of use</p>
           </div>
 
